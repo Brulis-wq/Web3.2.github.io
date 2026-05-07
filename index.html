@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistemas Informáticos — Mantenimiento & Calidad</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">" 
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="top">
+    <div class="nav-brand">
+      <span class="brand-dot"></span>
+      <span class="brand-name">Sistemas</span>
+    </div>
+
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-menu" id="navMenu">
+      <ul class="nav-links">
+        <li><a href="#inicio" onclick="closeMenu()">Inicio</a></li>
+        <li class="nav-dropdown">
+          <button class="dropdown-btn" onclick="toggleDropdown(this)">
+            Temas <span class="arrow">▾</span>
+          </button>
+          <ul class="dropdown-list">
+            <li><a href="#tema1" onclick="closeMenu()">01 — Actividades de sistemas informáticos con riesgo de falla que pueden generar altos costos, pérdida de tiempo y credibilidad</a></li>
+            <li><a href="#tema2" onclick="closeMenu()">02 — Temas de investigación en gestión y sistemas informáticos</a></li>
+            <li><a href="#tema3" onclick="closeMenu()">03 — Mantenimiento & Sostenibilidad de sistemas informáticos</a></li>
+            <li><a href="#tema4" onclick="closeMenu()">04 — Mecanismos de registros de incidentes y herramientas de monitoreo de sistemas</a></li>
+            <li><a href="#tema5" onclick="closeMenu()">05 — Aseguramiento de Calidad</a></li>
+          </ul>
+        </li>
+        <li><a href="#readme" onclick="closeMenu()">Readme</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO / INICIO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero-deco">
+      <div class="deco-ring deco-ring--1"></div>
+      <div class="deco-ring deco-ring--2"></div>
+      <div class="deco-ring deco-ring--3"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-label">Ingeniería &amp; Gestión de Software</span>
+      <h1 class="hero-title">Sistemas<br/><em>Informáticos</em></h1>
+      <p class="hero-subtitle">Mantenimiento, Calidad y Sostenibilidad de los Sistemas</p>
+      <a href="#sobre" class="btn-main">Conocer más ↓</a>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE LA PÁGINA ===== -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <span class="tag-label">Acerca de esta página</span>
+      <h2 class="section-title">¿De qué trata este sitio?</h2>
+      <div class="sobre-body">
+        <p class="empty-note">Está página web trata sobre el módulo 3.2 el cual habla sobre el mantenimiento y sostenibilidad de sistemas informáticos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEMA 1 ===== -->
+  <section class="topic topic--alt" id="tema1">
+    <div class="container">
+      <span class="topic-num">01</span>
+      <h2 class="topic-title">Actividades de sistemas informáticos con riesgo de falla que pueden generar altos costos, pérdida de tiempo y credibilidad.</h2>
+      <div class="topic-body">
+        <p class="empty-note">
+          -Actualizaciones de Software y Parches
+          -Gestion de Cambios en la Infraestructura
+          -Gestion de Backups y Recuperacion
+          -Gestion de Accesos y Permisos
+          -Migraciones de Sistemas o Nube
+          -Operacion de Centro de Datos/Infraestructura Fisica
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEMA 2 ===== -->
+  <section class="topic" id="tema2">
+    <div class="container">
+      <span class="topic-num">02</span>
+      <h2 class="topic-title">Temas de investigación en gestión y sistemas informáticos.</h2>
+      <div class="topic-body">
+        <!-- ✏️ CONTENIDO TEMA 2 -->
+        <p class="empty-note">[ Agrega aquí el contenido del Tema 2 ]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEMA 3 ===== -->
+  <section class="topic topic--alt" id="tema3">
+    <div class="container">
+      <span class="topic-num">03</span>
+      <h2 class="topic-title">Mantenimiento y la sostenibilidad de sistemas informáticos.</h2>
+      <div class="topic-body">
+        <!-- ✏️ CONTENIDO TEMA 3 -->
+        <p class="empty-note">[ Agrega aquí el contenido del Tema 3 ]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEMA 4 ===== -->
+  <section class="topic" id="tema4">
+    <div class="container">
+      <span class="topic-num">04</span>
+      <h2 class="topic-title">Mecanismos de registros de incidentes y herramientas de monitoreo de sistemas.</h2>
+      <div class="topic-body">
+        <!-- ✏️ CONTENIDO TEMA 4 -->
+        <p class="empty-note">[ Agrega aquí el contenido del Tema 4 ]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEMA 5 ===== -->
+  <section class="topic topic--alt" id="tema5">
+    <div class="container">
+      <span class="topic-num">05</span>
+      <h2 class="topic-title">Esquema de aseguramiento de calidad.</h2>
+      <div class="topic-body">
+        <!-- ✏️ CONTENIDO TEMA 5 -->
+        <p class="empty-note">[ Agrega aquí el contenido del Tema 5 ]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== README ===== -->
+  <section class="readme-section" id="readme">
+    <div class="container">
+      <span class="tag-label">Documentación</span>
+      <h2 class="section-title">README</h2>
+      <div class="readme-body">
+        <!-- ✏️ APARTADO VACÍO: llena con tu documentación README -->
+        <p class="empty-note">[ Escribe aquí el contenido del README del proyecto ]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="brand-dot"></span>
+      <p>© 2026 SistemasPro — Todos los derechos reservados</p>
+      <a href="#top" class="back-top">↑ Inicio</a>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPT ===== -->
+  <script>
+    /* --- Menú hamburguesa --- */
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('open');
+      document.querySelector('.hamburger').classList.toggle('active');
+    }
+    function closeMenu() {
+      document.getElementById('navMenu').classList.remove('open');
+      document.querySelector('.hamburger').classList.remove('active');
+    }
+
+    /* --- Dropdown temas --- */
+    function toggleDropdown(btn) {
+      btn.closest('.nav-dropdown').classList.toggle('open');
+    }
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+      }
+    });
+
+    /* --- Navbar sombra al hacer scroll --- */
+    window.addEventListener('scroll', () => {
+      document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    /* --- Scroll reveal --- */
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.sobre, .topic, .readme-section').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
