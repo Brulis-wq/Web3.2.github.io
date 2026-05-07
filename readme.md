@@ -41,9 +41,3 @@
 ## 📅 Fecha
 
 [ 05 y 06 de mayo ]
-
----
-
-## 📝 Notas adicionales
-
-[ Agrega cualquier nota extra relevante para el proyecto ]
