@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Nombre del Proyecto
 
 > [ Modulo  3.2: Mantenimiento y aseguramiento de la operacion de sistemas informaticos. ]
@@ -7,11 +6,10 @@
 
 ## 📋 Descripción
 
-[ Este proyecto trata sobre el contenido del modulo 3.2 y aprovechar para poner en pratica todo lo aprendido en Visual Code ]
+[ Este proyecto trata sobre el contenido del modulo 3.2 el cual habla sobre el mantenimiento y sostenibilidad de los sistemas informacion, aprovechaando para poner en pratica todo lo aprendido en Visual Code ]
 
 ---
 =======
->>>>>>> e7702ad3f55795d146635cfa9e96d7c20bc3452b
 
 ## 🗂️ Estructura del proyecto
 
