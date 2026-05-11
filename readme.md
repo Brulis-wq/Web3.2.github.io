@@ -1,3 +1,15 @@
+# Nombre del Proyecto
+
+> [ Modulo  3.2: Mantenimiento y aseguramiento de la operacion de sistemas informaticos. ]
+
+---
+
+## 📋 Descripción
+
+[ Este proyecto trata sobre el contenido del modulo 3.2 el cual habla sobre el mantenimiento y sostenibilidad de los sistemas informacion, aprovechaando para poner en pratica todo lo aprendido en Visual Code ]
+
+---
+=======
 
 ## 🗂️ Estructura del proyecto
 
@@ -24,8 +36,8 @@
 
 ## 🛠️ Tecnologías utilizadas
 
-- HTML5
-- CSS3 (Variables, Flexbox, Grid, Animaciones)
+- HTML
+- CSS (Variables, Flexbox, Grid, Animaciones)
 - JavaScript (Vanilla)
 - Google Fonts — Playfair Display & DM Sans
 
