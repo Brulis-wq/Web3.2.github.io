@@ -3,183 +3,477 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sistemas Informáticos — Mantenimiento & Calidad</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="link rel="preconnect" href="https://fonts.googleapis.com">
-<lgitink rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">" 
+  <title>Pacman | Mantenimiento &amp; Sostenibilidad de Sistemas</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    /* Extra wide layout for index */
+    .wide-container { max-width: 1240px; margin: 0 auto; }
+    .bg-dark  { background: var(--dark); }
+    .bg-cream { background: var(--c3); }
+    .bg-sage  { background: var(--c2); }
+  </style>
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
-  <header class="navbar" id="top">
-    <div class="nav-brand">
-      <span class="brand-dot"></span>
-      <span class="brand-name">Desarrollo de Software</span>
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar">
+  <a href="index.html" class="logo">
+    <!-- Pacman animado SVG -->
+    <svg class="pacman-icon" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+      <g class="pacman-mouth">
+        <path class="pacman-body" d="
+          M18,18
+          L18,0
+          A18,18 0 1,1 17.99,0
+          Z"
+          style="fill:var(--c5)"/>
+      </g>
+      <circle cx="18" cy="9" r="2.5" fill="var(--c3)" opacity="0.9"/>
+    </svg>
+    <span class="logo-text">PACMAN</span>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> Inicio</a></li>
+    <li><a href="#servicios"><i class="fa-solid fa-gears"></i> Servicios</a></li>
+    <li><a href="#proceso"><i class="fa-solid fa-diagram-project"></i> Proceso</a></li>
+    <li><a href="#glosario"><i class="fa-solid fa-book-open"></i> Glosario</a></li>
+    <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+  </ul>
+
+  <button class="hamburger" id="hamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+  <a href="#servicios"><i class="fa-solid fa-gears"></i> Servicios</a>
+  <a href="#proceso"><i class="fa-solid fa-diagram-project"></i> Proceso</a>
+  <a href="#glosario"><i class="fa-solid fa-book-open"></i> Glosario</a>
+  <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contacto</a>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="hero-badge">
+    <i class="fa-solid fa-microchip"></i>
+    SISTEMAS SIEMPRE ACTIVOS
+  </div>
+
+  <h1>
+    <span>Mantenimiento</span><br>
+    &amp; Sostenibilidad<br>
+    de Sistemas
+  </h1>
+
+  <p>
+    Garantizamos el funcionamiento continuo, seguro y eficiente de tu infraestructura informática.
+    Soluciones a medida para empresas y profesionales.
+  </p>
+
+  <div class="dots-path">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+
+  <div class="hero-btns">
+    <a href="#servicios" class="btn btn-primary">
+      <i class="fa-solid fa-rocket"></i> Ver Servicios
+    </a>
+    <a href="contact.html" class="btn btn-outline">
+      <i class="fa-solid fa-message"></i> Contáctanos
+    </a>
+  </div>
+
+  <div class="ghosts-row">
+    <div class="ghost"><div class="eyes"><div class="eye"></div><div class="eye"></div></div></div>
+    <div class="ghost"><div class="eyes"><div class="eye"></div><div class="eye"></div></div></div>
+    <div class="ghost"><div class="eyes"><div class="eye"></div><div class="eye"></div></div></div>
+    <div class="ghost"><div class="eyes"><div class="eye"></div><div class="eye"></div></div></div>
+  </div>
+</section>
+
+<!-- ===================== STATS ===================== -->
+<div class="stats-band">
+  <div class="stat">
+    <i class="fa-solid fa-users stat-icon"></i>
+    <span class="stat-num">+100</span>
+    <span class="stat-label">Clientes Activos</span>
+  </div>
+  <div class="stat">
+    <i class="fa-solid fa-clock stat-icon"></i>
+    <span class="stat-num">24/7</span>
+    <span class="stat-label">Disponibilidad</span>
+  </div>
+  <div class="stat">
+    <i class="fa-solid fa-calendar-check stat-icon"></i>
+    <span class="stat-num">+5</span>
+    <span class="stat-label">Años de Experiencia</span>
+  </div>
+  <div class="stat">
+    <i class="fa-solid fa-shield-halved stat-icon"></i>
+    <span class="stat-num">99%</span>
+    <span class="stat-label">Uptime Garantizado</span>
+  </div>
+  <div class="stat">
+    <i class="fa-solid fa-bolt stat-icon"></i>
+    <span class="stat-num">2h</span>
+    <span class="stat-label">Respuesta Promedio</span>
+  </div>
+</div>
+
+<!-- ===================== SERVICIOS ===================== -->
+<section id="servicios" class="bg-cream">
+  <div class="wide-container">
+    <div class="section-header">
+      <div class="section-label"><i class="fa-solid fa-gears"></i> Nuestros Servicios</div>
+      <h2>Todo lo que tus sistemas necesitan</h2>
+      <p>Ofrecemos un portafolio completo de soluciones para mantener tu infraestructura informática al máximo rendimiento.</p>
+      <div class="divider"></div>
     </div>
 
-    <button class="hamburger" onclick="toggleMenu()" aria-label="Abrir menú">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="cards-grid">
+      <div class="card" tabindex="0">
+        <div class="card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        <h3>Mantenimiento Preventivo</h3>
+        <p>Revisiones periódicas programadas para detectar y corregir fallos potenciales antes de que impacten tu operación. Limpieza, actualización de controladores y ajuste de configuraciones.</p>
+      </div>
+      <div class="card" tabindex="0">
+        <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+        <h3>Soporte Técnico Reactivo</h3>
+        <p>Atención inmediata ante incidentes críticos. Nuestro equipo diagnostica y resuelve fallos de hardware y software con tiempo de respuesta garantizado de 2 horas.</p>
+      </div>
+      <div class="card" tabindex="0">
+        <div class="card-icon"><i class="fa-solid fa-leaf"></i></div>
+        <h3>Sostenibilidad de Sistemas</h3>
+        <p>Extendemos el ciclo de vida de tu infraestructura mediante optimización, actualizaciones estratégicas y gestión eficiente de recursos. Menor costo, mayor vida útil.</p>
+      </div>
+      <div class="card" tabindex="0">
+        <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3>Seguridad Informática</h3>
+        <p>Protección integral: antivirus corporativo, configuración de firewall, auditorías de vulnerabilidades y planes de respaldo para garantizar la integridad de tu información.</p>
+      </div>
+      <div class="card" tabindex="0">
+        <div class="card-icon"><i class="fa-solid fa-cloud"></i></div>
+        <h3>Gestión en la Nube</h3>
+        <p>Migración, configuración y administración de entornos cloud. Optimizamos tus recursos en AWS, Azure o Google Cloud para reducir costos operativos.</p>
+      </div>
+      <div class="card" tabindex="0">
+        <div class="card-icon"><i class="fa-solid fa-network-wired"></i></div>
+        <h3>Infraestructura de Red</h3>
+        <p>Diseño, instalación y mantenimiento de redes LAN/WAN. Configuración de routers, switches, VPN y puntos de acceso inalámbrico para máxima conectividad.</p>
+      </div>
+      <div class="card" tabindex="0">
+        <div class="card-icon"><i class="fa-solid fa-database"></i></div>
+        <h3>Respaldo y Recuperación</h3>
+        <p>Estrategias de backup automatizado (local y en la nube) con planes de recuperación ante desastres. Tu información siempre segura y recuperable.</p>
+      </div>
+      <div class="card" tabindex="0">
+        <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h3>Monitoreo Continuo</h3>
+        <p>Vigilancia 24/7 de tus sistemas con alertas en tiempo real. Detectamos anomalías antes de que se conviertan en problemas y generamos reportes de rendimiento mensuales.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <nav class="nav-menu" id="navMenu">
-      <ul class="nav-links">
-        <li><a href="#inicio" onclick="closeMenu()">Inicio</a></li>
-        <li class="nav-dropdown">
-          <button class="dropdown-btn" onclick="toggleDropdown(this)">
-            Temas <span class="arrow">▾</span>
-          </button>
-          <ul class="dropdown-list">
-            <li><a href="#tema1" onclick="closeMenu()">01 — ¿Que es el mantenimiento y sostenibilidad de sistemas informáticos?</a></li>
-            <li><a href="#tema2" onclick="closeMenu()">02 — Actividades de sistemas informáticos con riesgo de falla que pueden generar altos costos, pérdida de tiempo y credibilidad.</a></li>
-            <li><a href="#tema3" onclick="closeMenu()">03 — Mecanismos de registro de incidentes y herramientas de monitoreo.</a></li>
-            <li><a href="#tema3" onclick="closeMenu()">04 — Conclusión.</a></li>
-          </ul>
-        </li>
+<!-- ===================== INFO: QUIÉNES SOMOS ===================== -->
+<section class="bg-dark" style="padding: 5rem 2rem;">
+  <div class="info-section wide-container">
+    <div class="info-visual">
+      <i class="fa-solid fa-laptop-code"></i>
+      <p>Expertos en Sistemas</p>
+    </div>
+    <div class="info-content">
+      <h2>¿Quiénes somos?</h2>
+      <p style="color:rgba(236,231,209,0.75)">
+        <strong style="color:var(--c4)">Pacman</strong> es una empresa especializada en el mantenimiento y la sostenibilidad de sistemas informáticos. Nacimos con la misión de garantizar que la tecnología de nuestros clientes funcione de manera óptima, confiable y segura.
+      </p>
+      <p style="color:rgba(236,231,209,0.65)">
+        Contamos con un equipo de técnicos certificados con más de 5 años de experiencia en el sector, atendiendo desde pequeñas empresas hasta grandes corporaciones.
+      </p>
+      <ul class="info-list">
+        <li><i class="fa-solid fa-check-circle"></i> Técnicos certificados y en constante formación</li>
+        <li><i class="fa-solid fa-check-circle"></i> Atención personalizada para cada cliente</li>
+        <li><i class="fa-solid fa-check-circle"></i> Contratos flexibles adaptados a tu presupuesto</li>
+        <li><i class="fa-solid fa-check-circle"></i> Soporte remoto y presencial disponible</li>
       </ul>
-    </nav>
-  </header>
-
-  <!-- ===== HERO / INICIO ===== -->
-  <section class="hero" id="inicio">
-    <div class="hero-deco">
-      <div class="deco-ring deco-ring--1"></div>
-      <div class="deco-ring deco-ring--2"></div>
-      <div class="deco-ring deco-ring--3"></div>
     </div>
-    <div class="hero-content">
-      <span class="hero-label">Ingeniería &amp; Gestión de Software</span>
-      <h1 class="hero-title">Sistemas<br/><em>Informáticos</em></h1>
-      <p class="hero-subtitle">Mantenimiento, Calidad y Sostenibilidad de los Sistemas</p>
-      <a href="#sobre" class="btn-main">Conocer más ↓</a>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== SOBRE LA PÁGINA ===== -->
-  <section class="sobre" id="sobre">
-    <div class="container">
-      <span class="tag-label">Acerca de esta página</span>
-      <h2 class="section-title">¿De qué trata este sitio?</h2>
-      <div class="sobre-body">
-        <p class="empty-note">Está página web trata sobre el módulo 3.2 el cual habla sobre el mantenimiento y sostenibilidad de sistemas informáticos.</p>
+<!-- ===================== INFO: MISIÓN ===================== -->
+<section class="bg-cream" style="padding: 5rem 2rem;">
+  <div class="info-section reverse wide-container">
+    <div class="info-content">
+      <h2>Nuestra Misión</h2>
+      <p>
+        Proveer soluciones de mantenimiento informático que garanticen la continuidad operativa de nuestros clientes, minimizando tiempos de inactividad y maximizando el retorno sobre su inversión tecnológica.
+      </p>
+      <p>
+        Creemos en construir relaciones a largo plazo basadas en la confianza, la transparencia y resultados medibles. No somos un proveedor más, somos tu aliado tecnológico.
+      </p>
+      <ul class="info-list">
+        <li><i class="fa-solid fa-star" style="color:var(--c1)"></i> Excelencia en cada intervención técnica</li>
+        <li><i class="fa-solid fa-star" style="color:var(--c1)"></i> Comunicación clara y reportes detallados</li>
+        <li><i class="fa-solid fa-star" style="color:var(--c1)"></i> Soluciones rentables y sostenibles</li>
+        <li><i class="fa-solid fa-star" style="color:var(--c1)"></i> Compromiso con la seguridad de tu información</li>
+      </ul>
+    </div>
+    <div class="info-visual">
+      <i class="fa-solid fa-bullseye"></i>
+      <p>Misión y Valores</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== INFO: VISIÓN ===================== -->
+<section class="bg-dark" style="padding: 5rem 2rem;">
+  <div class="info-section wide-container">
+    <div class="info-visual">
+      <i class="fa-solid fa-eye"></i>
+      <p>Visión de Futuro</p>
+    </div>
+    <div class="info-content">
+      <h2 style="color:var(--c4)">Nuestra Visión</h2>
+      <p style="color:rgba(236,231,209,0.75)">
+        Convertirnos en la empresa de referencia en mantenimiento y sostenibilidad de sistemas informáticos a nivel regional, reconocidos por nuestra capacidad de respuesta, calidad técnica e innovación constante.
+      </p>
+      <p style="color:rgba(236,231,209,0.65)">
+        Apostamos por integrar las últimas tecnologías —inteligencia artificial para el monitoreo predictivo, automatización de procesos y ciberseguridad avanzada— para ofrecer siempre lo mejor a nuestros clientes.
+      </p>
+      <ul class="info-list">
+        <li style="color:rgba(236,231,209,0.7)"><i class="fa-solid fa-arrow-trend-up" style="color:var(--c2)"></i> Crecimiento sostenido año tras año</li>
+        <li style="color:rgba(236,231,209,0.7)"><i class="fa-solid fa-arrow-trend-up" style="color:var(--c2)"></i> Expansión a nuevos mercados regionales</li>
+        <li style="color:rgba(236,231,209,0.7)"><i class="fa-solid fa-arrow-trend-up" style="color:var(--c2)"></i> Adopción de tecnologías predictivas con IA</li>
+        <li style="color:rgba(236,231,209,0.7)"><i class="fa-solid fa-arrow-trend-up" style="color:var(--c2)"></i> Impacto positivo en la comunidad tecnológica</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROCESO ===================== -->
+<section id="proceso" class="bg-cream">
+  <div class="wide-container">
+    <div class="section-header">
+      <div class="section-label"><i class="fa-solid fa-diagram-project"></i> Cómo Trabajamos</div>
+      <h2>Nuestro Proceso</h2>
+      <p>Un método probado que garantiza resultados consistentes en cada intervención.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-card" tabindex="0">
+        <span class="step-number">PASO 01</span>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <h3>Diagnóstico</h3>
+        <p>Evaluación completa del estado actual de tus sistemas para identificar riesgos y oportunidades de mejora.</p>
+      </div>
+      <div class="step-card" tabindex="0">
+        <span class="step-number">PASO 02</span>
+        <i class="fa-solid fa-file-contract"></i>
+        <h3>Planificación</h3>
+        <p>Diseño de un plan de mantenimiento personalizado con cronograma, prioridades y presupuesto detallado.</p>
+      </div>
+      <div class="step-card" tabindex="0">
+        <span class="step-number">PASO 03</span>
+        <i class="fa-solid fa-play"></i>
+        <h3>Ejecución</h3>
+        <p>Implementación del plan con mínima interrupción a tu operación, siguiendo mejores prácticas del sector.</p>
+      </div>
+      <div class="step-card" tabindex="0">
+        <span class="step-number">PASO 04</span>
+        <i class="fa-solid fa-chart-bar"></i>
+        <h3>Monitoreo</h3>
+        <p>Vigilancia continua post-intervención con métricas en tiempo real y alertas automáticas.</p>
+      </div>
+      <div class="step-card" tabindex="0">
+        <span class="step-number">PASO 05</span>
+        <i class="fa-solid fa-file-lines"></i>
+        <h3>Reporte</h3>
+        <p>Informe mensual detallado con hallazgos, acciones realizadas, KPIs y recomendaciones estratégicas.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== TEMA 1 ===== -->
-  <section class="topic" id="tema1">
-    <div class="container">
-      <span class="topic-num">01</span>
-      <h1 class="topic-title">¿Que es el mantenimiento y sostenibilidad de sistemas informáticos?</h1>
-      <div class="topic-body">
-        <p class="empty-note">El mantenimiento y sostenibilidad de sistemas informáticos es el proceso de cuidar, actualizar y administrar los sistemas tecnológicos para garantizar
-          que funcionen de manera correcta, segura y eficiente durante el mayor tiempo posible. Esto incluye computadoras, servidores, programas, redes y bases de datos 
-          que utilizan las empresas o personas en sus actividades diarias; son importantes porque ayudan a mantener la continuidad de las operaciones, proteger la información, 
-          reducir costos y contribuir al cuidado del medio ambiente mediante un uso adecuado de la tecnología.
-        </p>
-      </div>
+<!-- ===================== GLOSARIO / TABLA ===================== -->
+<section id="glosario" class="table-section">
+  <div class="wide-container">
+    <div class="section-header">
+      <div class="section-label"><i class="fa-solid fa-book-open"></i> Glosario Técnico</div>
+      <h2>Tabla de Significados</h2>
+      <p>Referencia rápida de los términos más utilizados en mantenimiento y sostenibilidad de sistemas informáticos.</p>
+      <div class="divider"></div>
     </div>
-  </section>
 
-  <!-- ===== TEMA 2 ===== -->
-  <section class="topic topic--alt" id="tema2">
-    <div class="container">
-      <span class="topic-num">02</span>
-      <h2 class="topic-title">Actividades de sistemas informáticos con riesgo de falla que pueden generar altos costos, pérdida de tiempo y credibilidad.</h2>
-      <div class="topic-body">
-        <p class="empty-note">Algunas actividades de sistemas informáticos presentan riesgos de falla que pueden ocasionar altos costos económicos, pérdida de tiempo y afectar la credibilidad de una empresa o institución.
-          Estas fallas pueden surgir por errores técnicos, falta de mantenimiento o mala administración de los sistemas; además, la confianza de clientes y usuarios puede verse afectada, 
-          dañando la imagen y credibilidad de la organización. Algunas actvidades son:
-          -Actualizaciones de Software y Parches
-          -Gestion de Cambios en la Infraestructura
-          -Gestion de Backups y Recuperacion
-          -Gestion de Accesos y Permisos
-          -Migraciones de Sistemas o Nube
-          -Operacion de Centro de Datos Infraestructura Fisica
-        </p>
-      </div>
+    <div class="table-wrap">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th><i class="fa-solid fa-tag"></i>Término</th>
+            <th><i class="fa-solid fa-circle-info"></i>Definición</th>
+            <th><i class="fa-solid fa-layer-group"></i>Categoría</th>
+            <th><i class="fa-solid fa-star"></i>Relevancia</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Uptime</strong></td>
+            <td>Tiempo durante el cual un sistema está operativo y disponible sin interrupciones. Se expresa en porcentaje (ej. 99.9%).</td>
+            <td><span class="badge-table"><i class="fa-solid fa-server"></i> Infraestructura</span></td>
+            <td>Alta</td>
+          </tr>
+          <tr>
+            <td><strong>Downtime</strong></td>
+            <td>Período en que un sistema no está disponible debido a fallas, mantenimiento programado u otros incidentes.</td>
+            <td><span class="badge-table"><i class="fa-solid fa-server"></i> Infraestructura</span></td>
+            <td>Alta</td>
+          </tr>
+          <tr>
+            <td><strong>Backup</strong></td>
+            <td>Copia de seguridad de datos almacenada en un medio alternativo para recuperación ante pérdidas o fallos.</td>
+            <td><span class="badge-table"><i class="fa-solid fa-database"></i> Datos</span></td>
+            <td>Crítica</td>
+          </tr>
+          <tr>
+            <td><strong>Parche de Seguridad</strong></td>
+            <td>Actualización de software diseñada para corregir vulnerabilidades de seguridad descubiertas después del lanzamiento original.</td>
+            <td><span class="badge-table"><i class="fa-solid fa-shield-halved"></i> Seguridad</span></td>
+            <td>Crítica</td>
+          </tr>
+          <tr>
+            <td><strong>Firewall</strong></td>
+            <td>Sistema de seguridad que monitorea y controla el tráfico de red entrante y saliente según reglas de seguridad predefinidas.</td>
+            <td><span class="badge-table"><i class="fa-solid fa-shield-halved"></i> Seguridad</span></td>
+            <td>Alta</td>
+          </tr>
+          <tr>
+            <td><strong>SLA</strong></td>
+            <td>Service Level Agreement. Acuerdo de Nivel de Servicio que define los estándares de calidad, tiempos de respuesta y responsabilidades contractuales.</td>
+            <td><span class="badge-table"><i class="fa-solid fa-file-contract"></i> Contrato</span></td>
+            <td>Alta</td>
+          </tr>
+          <tr>
+            <td><strong>Monitoreo Proactivo</strong></td>
+            <td>Supervisión continua de sistemas para detectar anomalías antes de que generen fallos o interrupciones en el servicio.</td>
+            <td><span class="badge-table"><i class="fa-solid fa-chart-line"></i> Operaciones</span></td>
+            <td>Alta</td>
+          </tr>
+          <tr>
+            <td><strong>Virtualización</strong></td>
+            <td>Tecnología que permite crear versiones virtuales de hardware, sistemas operativos o redes para optimizar el uso de recursos físicos.</td>
+            <td><span class="badge-table"><i class="fa-solid fa-cloud"></i> Cloud</span></td>
+            <td>Media</td>
+          </tr>
+          <tr>
+            <td><strong>RAID</strong></td>
+            <td>Redundant Array of Independent Disks. Tecnología que combina múltiples discos duros para mejorar el rendimiento y la tolerancia a fallos.</td>
+            <td><span class="badge-table"><i class="fa-solid fa-database"></i> Hardware</span></td>
+            <td>Media</td>
+          </tr>
+          <tr>
+            <td><strong>Ticketing</strong></td>
+            <td>Sistema de gestión de incidencias que registra, clasifica y hace seguimiento de cada solicitud de soporte técnico hasta su resolución.</td>
+            <td><span class="badge-table"><i class="fa-solid fa-headset"></i> Soporte</span></td>
+            <td>Media</td>
+          </tr>
+          <tr>
+            <td><strong>DNS</strong></td>
+            <td>Domain Name System. Servicio que traduce nombres de dominio legibles por humanos a direcciones IP utilizadas por los equipos en red.</td>
+            <td><span class="badge-table"><i class="fa-solid fa-network-wired"></i> Red</span></td>
+            <td>Media</td>
+          </tr>
+          <tr>
+            <td><strong>VPN</strong></td>
+            <td>Virtual Private Network. Red privada virtual que cifra la conexión a internet para acceso seguro a recursos corporativos desde cualquier lugar.</td>
+            <td><span class="badge-table"><i class="fa-solid fa-shield-halved"></i> Seguridad</span></td>
+            <td>Alta</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== TEMA 3 ===== -->
-  <section class="topic" id="tema3">
-    <div class="container">
-      <span class="topic-num">03</span>
-      <h2 class="topic-title">Mecanismos de registro de incidentes y herramientas de monitoreo.</h2>
-      <div class="topic-body">
-        <p class="empty-note">Los mecanismos de registro de incidentes son procesos y herramientas utilizadas para documentar, controlar y dar seguimiento a los problemas o fallas que ocurren en un sistema informático. Su función principal es registrar información importante sobre cada incidente, 
-          como la fecha, el tipo de problema, el nivel de gravedad, las causas y las acciones realizadas para solucionarlo. Entre los mecanismos más utilizados se encuentran:
-          "Bitácoras o logs del sistema, Tickets de soporte técnico, Reportes de incidentes, Historiales de mantenimiento, Alertas automáticas de fallas.""
-          las herramientas de monitoreo son programas o sistemas que supervisan constantemente el funcionamiento de equipos, redes, servidores y aplicaciones. Estas herramientas ayudan a detectar fallas, lentitud, accesos sospechosos o 
-          caídas del sistema en tiempo real para actuar rápidamente y evitar problemas mayores. Algunos programas son:
-          Nagios, Zabbix, PRTG Network Monitor y Bugzilla.
-        </p>
-      </div>
-    </div>
-  </section>
+<!-- ===================== CTA ===================== -->
+<div class="cta-band">
+  <h2><i class="fa-solid fa-rocket"></i> ¿Listo para proteger tus sistemas?</h2>
+  <p>Contáctanos hoy y recibe un diagnóstico gratuito de tu infraestructura informática.</p>
+  <a href="contact.html" class="btn btn-cta">
+    <i class="fa-solid fa-envelope"></i> Ir a Contacto
+  </a>
+</div>
 
-  <!-- ===== TEMA 4 ===== -->
-  <section class="topic topic--alt" id="tema4">
-    <div class="container">
-      <span class="topic-num">04</span>
-      <h2 class="topic-title">Conslusión.</h2>
-      <div class="topic-body">
-        <p class="empty-note">En conclusión, el mantenimiento y la sostenibilidad de sistemas informáticos son fundamentales para garantizar el correcto funcionamiento de la tecnología dentro de una empresa o institución. 
-          A través del mantenimiento preventivo y correctivo se pueden evitar fallas, pérdidas de información, altos costos y retrasos en las actividades, 
-          mientras que la sostenibilidad permite aprovechar los recursos tecnológicos de manera responsable y eficiente. 
-          Además, el uso de mecanismos de registro de incidentes y herramientas de monitoreo ayuda a detectar y solucionar problemas rápidamente, mejorando la seguridad, el rendimiento y la continuidad de los sistemas. Todo esto contribuye a mantener la productividad, 
-          proteger la información y conservar la confianza y credibilidad de los usuarios. Porque al final, un sistema informático 
-          bien cuidado evita el caos digital que los humanos suelen descubrir exactamente cinco minutos antes de una entrega importante.
-        </p>
-      </div>
-    </div>
-  </section>
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="footer-brand">
+    <i class="fa-solid fa-microchip"></i> PACMAN
+  </div>
+  <span class="footer-copy">© 2026 Pacman — Mantenimiento &amp; Sostenibilidad de Sistemas</span>
+  <div class="footer-links">
+    <a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+    <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contacto</a>
+  </div>
+</footer>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <span class="brand-dot"></span>
-      <p>© 2026 Mantenimiento&Sostenibilidad — Todos los derechos reservados</p>
-      <a href="#top" class="back-top">↑ Inicio</a>
-    </div>
-  </footer>
+<!-- ===================== JS ===================== -->
+<script>
+  // Hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
 
-  <!-- ===== SCRIPT ===== -->
-  <script>
-    /* --- Menú hamburguesa --- */
-    function toggleMenu() {
-      document.getElementById('navMenu').classList.toggle('open');
-      document.querySelector('.hamburger').classList.toggle('active');
-    }
-    function closeMenu() {
-      document.getElementById('navMenu').classList.remove('open');
-      document.querySelector('.hamburger').classList.remove('active');
-    }
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+  });
 
-    /* --- Dropdown temas --- */
-    function toggleDropdown(btn) {
-      btn.closest('.nav-dropdown').classList.toggle('open');
-    }
-    document.addEventListener('click', function(e) {
-      if (!e.target.closest('.nav-dropdown')) {
-        document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+  // Close menu when link clicked
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+    });
+  });
+
+  // Lift animation on cards (click + keyboard)
+  document.querySelectorAll('.card, .step-card').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('lifted');
+    });
+
+    card.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        card.classList.toggle('lifted');
       }
     });
+  });
 
-    /* --- Navbar sombra al hacer scroll --- */
-    window.addEventListener('scroll', () => {
-      document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => {
+      if (window.scrollY >= sec.offsetTop - 100) {
+        current = sec.getAttribute('id');
+      }
     });
-
-    /* --- Scroll reveal --- */
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
-    }, { threshold: 0.08 });
-
-    document.querySelectorAll('.sobre, .topic, .readme-section').forEach(el => {
-      el.classList.add('reveal');
-      observer.observe(el);
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
     });
-  </script>
+  });
+</script>
 </body>
 </html>
