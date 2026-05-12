@@ -90,25 +90,14 @@ Ambas fuentes se cargan desde Google Fonts mediante `@import` en `style.css`.
 
 ---
 
-## 🚀 Cómo Usar
-
-1. Descomprime o clona los archivos en una carpeta local.
-2. Abre `index.html` en cualquier navegador moderno.
-3. No se requiere servidor ni instalación adicional.
-4. Para publicar en línea, sube todos los archivos a tu hosting manteniendo la misma estructura de carpetas.
-
-> **Nota:** El formulario de contacto incluye lógica de demo (muestra mensaje de éxito). Para envío real de correos, conecta un backend (PHP, Node.js) o un servicio como Formspree.
-
----
-
 ## 📞 Información de Contacto
 
 | Canal | Detalle |
 |-------|---------|
-| Teléfono | 6008-5743 |
-| Correo | pacmanss@gmail.com |
+| Teléfono | 7111-1853 |
+| Correo | Pacmansss1@gmail.com |
 | Ubicación | San Salvador, El Salvador |
-| Horario Oficina | Lun–Vie 8:00–18:00 / Sáb 8:00–12:00 |
+| Horario Oficina | Lun–Vie 9:00–17:00 / Sáb 9:00–12:00 |
 | Soporte Remoto | Lun–Vie 7:00–20:00 / Emergencias 24/7 |
 
 ---
