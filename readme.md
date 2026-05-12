@@ -1,19 +1,4 @@
-<<<<<<< HEAD
 # 🎮 Pacman — Mantenimiento & Sostenibilidad de Sistemas
-=======
-# Nombre del Proyecto
-
-> [ Modulo  3.2: Mantenimiento y aseguramiento de la operacion de sistemas informaticos. ]
-
----
-
-## 📋 Descripción
-
-[ Este proyecto trata sobre el contenido del modulo 3.2 el cual habla sobre el mantenimiento y sostenibilidad de los sistemas informacion, aprovechaando para poner en pratica todo lo aprendido en Visual Code ]
-
----
-=======
->>>>>>> 740e721cef09045439f522b6640d2dbc5fb9c42a
 
 Sitio web corporativo para **Pacman**, empresa especializada en mantenimiento y sostenibilidad de sistemas informáticos.
 
@@ -47,7 +32,6 @@ pacman-web/
 
 ## 🔤 Tipografía
 
-<<<<<<< HEAD
 | Uso | Fuente |
 |-----|--------|
 | Títulos y encabezados | **Orbitron** (Google Fonts) |
@@ -55,12 +39,6 @@ pacman-web/
 | Contact.html (todo) | **Share Tech** (exclusivo) |
 
 Ambas fuentes se cargan desde Google Fonts mediante `@import` en `style.css`.
-=======
-- HTML
-- CSS (Variables, Flexbox, Grid, Animaciones)
-- JavaScript (Vanilla)
-- Google Fonts — Playfair Display & DM Sans
->>>>>>> 740e721cef09045439f522b6640d2dbc5fb9c42a
 
 ---
 
@@ -120,7 +98,7 @@ Ambas fuentes se cargan desde Google Fonts mediante `@import` en `style.css`.
 | Correo | Pacmansss1@gmail.com |
 | Ubicación | San Salvador, El Salvador |
 | Horario Oficina | Lun–Vie 9:00–17:00 / Sáb 9:00–12:00 |
-| Soporte Remoto | Lun–Vie 7:00–20:00 / Emergencias 24/7 |
+| Soporte Remoto | Lun–Vie 8:00–18:00 / Emergencias 24/7 |
 
 ---
 
