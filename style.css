@@ -833,7 +833,7 @@ footer {
   font-size: 1rem;
   color: var(--c5);
   font-weight: 900;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .footer-copy {
@@ -863,13 +863,13 @@ footer {
   RESPONSIVE
    ========================================================= */
 @media (max-width: 768px) {
-  .navbar { padding: 0 1.2rem; }
+  .navbar { padding: 0 1.7rem; }
   .nav-links { display: none; }
   .hamburger { display: flex; }
 
   .info-section {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1rem;
   }
   .info-section.reverse { direction: ltr; }
 
