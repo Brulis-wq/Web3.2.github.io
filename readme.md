@@ -42,31 +42,6 @@ Ambas fuentes se cargan desde Google Fonts mediante `@import` en `style.css`.
 
 ---
 
-## 📄 Páginas
-
-### `index.html` — Página Principal
-- **Navbar** fija con menú hamburguesa para móvil
-- **Hero** con Pacman animado, fantasmas y puntos parpadeantes
-- **Stats band** con métricas destacadas (clientes, uptime, años, etc.)
-- **Servicios** — 8 tarjetas con animación lift al hacer clic
-- **Quiénes somos** — sección informativa alternada
-- **Misión** — valores y compromisos
-- **Visión** — perspectiva y crecimiento futuro
-- **Proceso** — 5 pasos del flujo de trabajo
-- **Glosario** — tabla de 12 términos técnicos con categorías
-- **CTA band** — llamada a la acción hacia contacto
-- **Footer** con navegación
-
-### `contact.html` — Página de Contacto
-- **Hero** de contacto con badge animado
-- **4 tarjetas de información**: teléfono, email, ubicación, horario
-- **Formulario de mensaje** con campos completos y validación visual
-- **Portal de login** con toggle de contraseña
-- **Sección "Sobre Nosotros"** con 4 tarjetas de beneficios
-- **Horarios detallados** (oficina, remoto, contacto directo)
-
----
-
 ## ✨ Características
 
 ### Animaciones
